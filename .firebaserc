@@ -1,0 +1,27 @@
+{
+  "projects": {
+    "default": "myportfolio-react-1d481"
+  },
+  "targets": {
+    "myportfolio-react-1d481": {
+      "hosting": {
+        "host": [
+          "myp-host"
+        ],
+        "auth": [
+          "myp-auth"
+        ],
+        "context": [
+          "myp-context"
+        ],
+        "dashboard": [
+          "myp-dashboard"
+        ],
+        "application": [
+          "myportfolio-react-1d481"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

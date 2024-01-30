@@ -1,0 +1,92 @@
+{
+    "helloWorld": "Ciao Mondo!",
+    "whoamI": "Ciao, sono ",
+    "read-more": "Leggi di più",
+    "skills": "Competenze",
+    "relevant-sections": "Sezioni Rilevanti",
+    "home": "Pagina principale",
+    "stories": "Storie",
+    "list": "Lista",
+    "errors": {
+        "no-data-found": "Nessun risultato trovato"
+    },
+    "navbar": {
+        "discover": "Scopri di più",
+        "explore-people": "Esplora Professionisti",
+        "sign-up": "Registrati",
+        "support": "Supporto"
+    },
+    "contact-us": {
+        "title": "Contattaci",
+        "description": "Se hai domande o suggerimenti, non esitare a contattarci utilizzando il modulo di contatto sottostante.",
+        "name": "Nome completo",
+        "email": "Email",
+        "message": "Messaggio",
+        "send": "Invia",
+        "success": "Il tuo messaggio è stato inviato con successo. Ti risponderemo il prima possibile.",
+        "error": "Si è verificato un errore durante l'invio del messaggio. Riprova più tardi.",
+        "validations": {
+            "name-required": "Il nome è obbligatorio",
+            "email-required": "L'email è obbligatoria",
+            "email-invalid": "L'email non è valida",
+            "message-required": "Il messaggio è obbligatorio"
+        }
+    },
+    "registration": {
+        "title": "Registrazione",
+        "description": "Crea il tuo portfolio e inizia a raccontare la tua storia professionale.",
+        "subtitle": "Raccontaci qualcosa di te",
+        "plan": {
+            "title": "Scegli il tuo piano",
+            "basic": "Base",
+            "professional": "Professionisti",
+            "organization": "Team",
+            "monthly": "Mensile",
+            "yearly": "Annuale",
+            "validation": {
+                "plan-required": "Seleziona un piano.",
+                "period-required": "Seleziona un periodo."
+            }
+        },
+        "mandatory-fields": {
+            "title": "Informazioni obbligatorie",
+            "first-name": "Nome",
+            "last-name": "Cognome",
+            "email": "Email",
+            "validations": {
+                "first-name-required": "Inserisci il tuo nome.",
+                "last-name-required": "Inserisci il tuo cognome.",
+                "email-required": "Inserisci la tua email.",
+                "email-invalid": "Inserisci un'email valida."
+            }
+        },
+        "feedback": {
+            "title": "Aiutaci con un feedback",
+            "represents": {
+                "title": "Cosa ti rappresenta di più?",
+                "student": "Studente",
+                "professional": "Professionista",
+                "organization": "Organizzazione",
+                "other": "Altro"
+            },
+            "found-us": "Come ci hai trovato?",
+            "looking-for": {
+                "title": "Cosa stai cercando?",
+                "placeholder": "Scrivi le tue aspettative..."
+            }
+        },
+        "payment": {
+            "title": "Informazioni di pagamento",
+            "credit-card": "Carta di credito",
+            "paypal": "PayPal",
+            "validation": "Seleziona un metodo di pagamento."
+        },
+        "submit": "Continua all'ultimo passaggio"
+    },
+    "footer": {
+        "title": "Iniziamo!",
+        "description": "Con MyPortfolio, trasforma la tua esperienza e competenza in storie coinvolgenti. Racconta la tua professionalità in modo unico e conquista nuove opportunità.<br/><br/>Hai qualche domanda?",
+        "contact-us": "Contattaci",
+        "support": "Supportaci"
+    }
+}

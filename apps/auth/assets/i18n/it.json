@@ -1,0 +1,39 @@
+{
+    "sign-in": {
+        "generic-error": "Errore nell'effettuare il login",
+        "welcome-back": "Bentornato",
+        "instruction": "Inserisci la tua email e password per accedere",
+        "remember-me": "Ricordami",
+        "sign-in": "login",
+        "no-account": "Non hai un account?",
+        "register": "Registrati",
+        "validations": {
+            "email-required": "L'email è obbligatoria",
+            "password-required": "La password è obbligatoria"
+        }
+    },
+    "sign-up": {
+        "generic-error": "Errore durante la registrazione",
+        "title": "Unisciti a noi",
+        "instruction": "Inserisci il tuo nome, l'email e password per registrarti",
+        "fields": {
+            "firstName": "Nome",
+            "lastName": "Cognome",
+            "email": "Email",
+            "password": "Password",
+            "matchingPassword": "Conferma password"
+        },
+        "terms": "Accetto i Termini e le Condizioni",
+        "sign-up": "Registrati",
+        "have-account": "Hai già un account?",
+        "login": "Login",
+        "validations": {
+            "firstName-required": "Il nome è obbligatorio",
+            "lastName-required": "Il cognome è obbligatorio",
+            "email-required": "L'email è obbligatoria",
+            "password-required": "La password è obbligatoria",
+            "matchingPassword-required": "Ripeti la tua password",
+            "matchingPassword-notMatch": "Le password non coincidono"
+        }
+    }
+}

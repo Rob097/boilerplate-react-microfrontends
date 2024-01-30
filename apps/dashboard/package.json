@@ -1,0 +1,32 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Roberto Dellantonio",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:start": "cd dist && PORT=3004 npx serve",
+    "start": "webpack serve --open --mode development",
+    "start:live": "webpack serve --open --mode development --live-reload --hot"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "file-loader": "^6.2.0",
+    "tailwindcss": "^3.3.2",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.18",
+    "@tinymce/tinymce-react": "^4.3.0",
+    "react-hook-form": "^7.44.3",
+    "react-router-dom": "^6.11.2",
+    "tinymce": "^5.10.7"
+  }
+}

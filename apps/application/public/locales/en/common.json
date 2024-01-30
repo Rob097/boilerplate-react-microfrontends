@@ -1,0 +1,92 @@
+{
+    "helloWorld": "Hello World!",
+    "whoamI": "Hi, I'm ",
+    "read-more": "Read more",
+    "skills": "Skills",
+    "relevant-sections": "Relevant sections",
+    "home": "Home",
+    "stories": "Stories",
+    "list": "List",
+    "errors": {
+        "no-data-found": "No data found"
+    },
+    "navbar": {
+        "discover": "Discover",
+        "explore-people": "Explore professionals",
+        "sign-up": "Sign up",
+        "support": "Support"
+    },
+    "contact-us": {
+        "title": "Contact us",
+        "description": "If you have any questions or suggestions, please contact us by filling out the form below.",
+        "name": "Full Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send",
+        "success": "Your message has been sent successfully.",
+        "error": "An error occurred while sending your message. Please try again later.",
+        "validations": {
+            "name-required": "Please enter your full name.",
+            "email-required": "Please enter your email address.",
+            "email-invalid": "Please enter a valid email address.",
+            "message-required": "Please enter your message."
+        }
+    },
+    "registration": {
+        "title": "Registration",
+        "description": "Create your account and start sharing your stories with the world.",
+        "subtitle": "Tell us something about yourself",
+        "plan": {
+            "title": "Your plan",
+            "basic": "Basic",
+            "professional": "Professional",
+            "organization": "Organization",
+            "monthly": "Monthly",
+            "yearly": "Yearly",
+            "validation": {
+                "plan-required": "Please select a plan.",
+                "period-required": "Please select a period."
+            }
+        },
+        "mandatory-fields": {
+            "title": "Mandatory information",
+            "first-name": "First name",
+            "last-name": "Last name",
+            "email": "Email",
+            "validations": {
+                "first-name-required": "Please enter your first name.",
+                "last-name-required": "Please enter your last name.",
+                "email-required": "Please enter your email address.",
+                "email-invalid": "Please enter a valid email address."
+            }
+        },
+        "feedback": {
+            "title": "Help us with some feedback",
+            "represents": {
+                "title": "What represents you the most?",
+                "student": "Student",
+                "professional": "Professional",
+                "organization": "Organization",
+                "other": "Other"
+            },
+            "found-us": "How did you find us?",
+            "looking-for": {
+                "title": "What are you looking for?",
+                "placeholder": "Write your expectations..."
+            }
+        },
+        "payment": {
+            "title": "Payment information",
+            "credit-card": "Credit card",
+            "paypal": "PayPal",
+            "validation": "Please select a payment method."
+        },
+        "submit": "Continue to the final step"
+    },
+    "footer": {
+        "title": "Get Started!",
+        "description": "With MyPortfolio, turn your expertise into compelling stories. Share your professionalism uniquely and seize new opportunities in your career journey.<br/><br/>Do you have any question?",
+        "contact-us": "Contact us",
+        "support": "Support us"
+    }
+}

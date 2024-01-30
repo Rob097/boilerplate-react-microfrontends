@@ -1,0 +1,42 @@
+{
+    "title": "Diary",
+    "diary": "Diary",
+    "hire-me": "Hire me",
+    "follow-me": "Follow me",
+    "categories": {
+        "title": "Categories",
+        "list": {
+            "all": "All",
+            "personal-experiences": "Professional experiences",
+            "personal-projects": "Personal projects",
+            "personal-educations": "Personal Educations",
+            
+            "experiences": "Experiences",
+            "educations": "Educations",
+            "projects": "Projects",
+
+            "my-experiences": "My experiences",
+            "my-educations": "My educations",
+            "my-projects": "My projects"
+        }
+    },
+    "sort": {
+        "title": "Sort",
+        "list": {
+            "none": "None",
+            "dateUp": "From the oldest",
+            "dateDown": "From the newest",
+            "name": "Name"
+        }
+    },
+    "filters": {
+        "apply": "Apply filters",
+        "by-name": "Search by name",
+        "by-skills": "Search by skills",
+        "clear": "Clear filters"
+    },
+    "related-skills": "Related skills",
+    "view-as-timeline": "View as timeline",
+    "view-as-list": "View as list",
+    "read-the-main-story": "Read the main story"
+}

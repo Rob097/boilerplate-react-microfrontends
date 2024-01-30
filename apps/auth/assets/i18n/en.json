@@ -1,0 +1,39 @@
+{
+    "sign-in": {
+        "generic-error": "An error occured during login",
+        "welcome-back": "Welcome Back",
+        "instruction": "Enter your email and password to sign in",
+        "remember-me": "Remember me",
+        "sign-in": "Sign In",
+        "no-account": "Don't have an account?",
+        "register": "Sign Up",
+        "validations": {
+            "email-required": "Email is required",
+            "password-required": "Password is required"
+        }
+    },
+    "sign-up": {
+        "generic-error": "An error occured during registration",
+        "title": "Join us today",
+        "instruction": "Enter your name, email and password to register",
+        "fields": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "password": "Password",
+            "matchingPassword": "Matching Password"
+        },
+        "terms": "I agree the Terms and Conditions",
+        "sign-up": "Sign up",
+        "have-account": "Already have an account?",
+        "login": "Sign in",
+        "validations": {
+            "firstName-required": "First Name is required",
+            "lastName-required": "Last Name is required",
+            "email-required": "Email is required",
+            "password-required": "Password is required",
+            "matchingPassword-required": "Repeat your password",
+            "matchingPassword-notMatch": "Your passwords do not match"
+        }
+    }
+}
