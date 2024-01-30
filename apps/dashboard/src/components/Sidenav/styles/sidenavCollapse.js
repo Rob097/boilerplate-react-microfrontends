@@ -7,7 +7,7 @@ function collapseItem(theme, ownerState) {
   const { pxToRem } = functions;
 
   return {
-    background: active && transparentSidenav ? white.main : transparent.main,
+    background: active && transparentSidenav ? white : transparent,
     color: active ? dark.main : text.main,
     display: "flex",
     alignItems: "center",
@@ -67,7 +67,7 @@ function collapseIconBox(theme, ownerState) {
         let background;
 
         if (!active) {
-          background = transparentSidenav ? white.main : light.main;
+          background = transparentSidenav ? white : light.main;
         } else if (color === "default") {
           background = info.main;
         } else if (color === "warning") {
@@ -81,13 +81,13 @@ function collapseIconBox(theme, ownerState) {
     },
 
     "& svg, svg g": {
-      fill: active ? white.main : palette.dark.state,
+      fill: active ? white : palette.dark.state,
     },
   };
 }
 
 const collapseIcon = ({ palette: { white, dark } }, { active }) => ({
-  color: active ? white.main : dark.state,
+  color: active ? white : dark.state,
 });
 
 function collapseText(theme, ownerState) {

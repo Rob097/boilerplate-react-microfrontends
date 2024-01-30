@@ -1,7 +1,7 @@
 import FormControl from '@mui/material/FormControl';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
-import { getLang, setLang } from 'context/i18n';
+import { getLang, setLang } from 'shared/i18n';
 import { useTranslation } from 'react-i18next';
 
 const LanguageSelector = ({ isMobile }) => {

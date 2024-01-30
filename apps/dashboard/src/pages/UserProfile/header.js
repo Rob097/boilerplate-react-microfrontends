@@ -18,9 +18,9 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import SettingsIcon from '@mui/icons-material/Settings';
 
 // Soft UI Dashboard React base styles
-import theme from "context/theme";
+import theme from "shared/theme";
 
-import { useAuthStore } from "context/stores/AuthStore";
+import { useAuthStore } from "shared/stores/AuthStore";
 
 function Header() {
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");
@@ -61,7 +61,7 @@ function Header() {
           backgroundImage: ({ functions: { rgba, linearGradient }, palette: { info } }) =>
             `${linearGradient(
               rgba(info.main, 0.6),
-              rgba(info.state, 0.6)
+              rgba(info.main, 0.6)
             )}, url(${""})`,
           backgroundSize: "cover",
           backgroundPosition: "50%",
@@ -72,7 +72,7 @@ function Header() {
       <Card
         sx={{
           backdropFilter: `saturate(200%) blur(30px)`,
-          backgroundColor: ({ functions: { rgba }, palette: { white } }) => rgba(white.main, 0.8),
+          backgroundColor: ({ functions: { rgba }, palette: { white } }) => rgba(white, 0.8),
           boxShadow: ({ boxShadows: { navbarBoxShadow } }) => navbarBoxShadow,
           position: "relative",
           mt: -8,

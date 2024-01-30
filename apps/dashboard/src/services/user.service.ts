@@ -1,5 +1,5 @@
-const constants = require('context/utilities/constants');
-const { View } = require('context/utilities/criteria');
+const constants = require('shared/utilities/constants');
+const { View } = require('shared/utilities/criteria');
 import { User, UserQ } from "../models/user.model";
 import { BaseService } from "./base.service";
 const USERS_URL = constants.BASE_URL + '/core/users';

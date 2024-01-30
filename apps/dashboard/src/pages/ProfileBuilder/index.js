@@ -9,7 +9,6 @@ import Grid from '@mui/system/Unstable_Grid';
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-import partyPopperImage from '../../../public/images/party-popper.png';
 import Completed from '../../components/Stepper/Completed';
 import CustomStep from '../../components/Stepper/CustomStep';
 import CustomStepper from '../../components/Stepper/CustomStepper';
@@ -81,7 +80,7 @@ const ProfileBuilder = () => {
             <CustomStep steps={steps} onSubmit={handleSubmit(handleNext)}>
 
                 {store.activeStep === steps.length && (
-                    <Completed content={t('profile-builder.completed.title')} img={partyPopperImage} reset={{ label: t('profile-builder.completed.button'), action: handleReset }} />
+                    <Completed content={t('profile-builder.completed.title')} img={'/images/party-popper.png'} reset={{ label: t('profile-builder.completed.button'), action: handleReset }} />
                 )}
 
                 {store.activeStep === 0 && (

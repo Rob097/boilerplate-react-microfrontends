@@ -6,17 +6,19 @@ function navbar(theme, ownerState) {
   const { navbarBoxShadow } = boxShadows;
   const { rgba, pxToRem } = functions;
 
+  console.log("palette", palette);
+
   return {
     boxShadow: transparentNavbar || absolute ? "none" : navbarBoxShadow,
     backdropFilter: transparentNavbar || absolute ? "none" : `saturate(200%) blur(${pxToRem(30)})`,
     backgroundColor:
-      transparentNavbar || absolute ? `${transparent.main} !important` : rgba(white.main, 0.8),
+      transparentNavbar || absolute ? `${transparent} !important` : rgba(white, 0.8),
 
     color: () => {
       let color;
 
       if (light) {
-        color = white.main;
+        color = white;
       } else if (transparentNavbar) {
         color = text.main;
       } else {

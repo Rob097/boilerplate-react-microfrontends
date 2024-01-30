@@ -5,7 +5,7 @@ import StepLabel from '@mui/material/StepLabel';
 import Stepper from '@mui/material/Stepper';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
-import theme from 'context/theme';
+import theme from 'shared/theme';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { useStepperStore } from './StepperContext';
@@ -60,12 +60,12 @@ const QontoConnector = styled(StepConnector)(({ theme }) => ({
     },
     [`&.${stepConnectorClasses.active}`]: {
         [`& .${stepConnectorClasses.line}`]: {
-            borderColor: palette.primary.main,
+            borderColor: theme.palette.primary.main,
         },
     },
     [`&.${stepConnectorClasses.completed}`]: {
         [`& .${stepConnectorClasses.line}`]: {
-            borderColor: palette.primary.main,
+            borderColor: theme.palette.primary.main,
         },
     },
     [`& .${stepConnectorClasses.line}`]: {
@@ -81,10 +81,10 @@ const QontoStepIconRoot = styled('div')(({ theme, ownerState }) => ({
     height: 22,
     alignItems: 'center',
     ...(ownerState.active && {
-        color: palette.primary.main,
+        color: theme.palette.primary.main,
     }),
     '& .QontoStepIcon-completedIcon': {
-        color: palette.primary.main,
+        color: theme.palette.primary.main,
         zIndex: 1,
         fontSize: 18,
     },

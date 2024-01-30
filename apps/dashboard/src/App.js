@@ -1,9 +1,9 @@
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { AuthStoreProvider } from "context/stores/AuthStore";
-import { SoftUIControllerProvider } from "context/stores/DashboardStore";
-import { StoreProvider } from "context/stores/Store";
-import theme from "context/theme";
+import { AuthStoreProvider } from "shared/stores/AuthStore";
+import { SoftUIControllerProvider } from "shared/stores/DashboardStore";
+import { StoreProvider } from "shared/stores/Store";
+import theme from "shared/theme";
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import i18n from "../public/i18n/i18n";

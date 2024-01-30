@@ -1,4 +1,4 @@
-import i18n from "context/i18n";
+import i18n from "shared/i18n";
 import translationEN from './en.json';
 import translationIT from './it.json';
 import { initReactI18next } from "react-i18next";

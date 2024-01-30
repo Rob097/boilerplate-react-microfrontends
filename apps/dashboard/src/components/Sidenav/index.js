@@ -7,7 +7,7 @@ import List from "@mui/material/List";
 import SidenavCollapse from "components/Sidenav/SidenavCollapse";
 import SidenavRoot from "components/Sidenav/SidenavRoot";
 import sidenavLogoLabel from "components/Sidenav/styles/sidenav";
-import { setMiniSidenav, useSoftUIController } from "context/stores/DashboardStore";
+import { setMiniSidenav, useSoftUIController } from "shared/stores/DashboardStore";
 import PropTypes from "prop-types";
 import { NavLink, useLocation } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";

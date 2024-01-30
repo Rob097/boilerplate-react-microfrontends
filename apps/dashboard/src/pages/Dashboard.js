@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from "@mui/material/Grid";
 import Navbar from "components/Navbar";
 import Sidenav from "components/Sidenav";
-import { setLayout, setMiniSidenav, useSoftUIController } from "context/stores/DashboardStore";
+import { setLayout, setMiniSidenav, useSoftUIController } from "shared/stores/DashboardStore";
 import { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 

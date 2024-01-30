@@ -1,5 +1,5 @@
-const constants = require('context/utilities/constants');
-const { View } = require('context/utilities/criteria');
+const constants = require('shared/utilities/constants');
+const { View } = require('shared/utilities/criteria');
 import { Diary, DiaryQ } from "../models/diary.model";
 import { BaseService } from "./base.service";
 const DIARIES_URL = constants.BASE_URL + '/core/diaries';

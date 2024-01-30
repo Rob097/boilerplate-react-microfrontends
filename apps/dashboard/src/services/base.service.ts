@@ -1,4 +1,4 @@
-const { Filters } = require('context/utilities/criteria');
+const { Filters } = require('shared/utilities/criteria');
 
 export interface BaseService {
     getById(id: number, view?: string): Promise<any>;

@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 import Divider from "@mui/material/Divider";
 import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
-import theme from "context/theme";
+import theme from "shared/theme";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 

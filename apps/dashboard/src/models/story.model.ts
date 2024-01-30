@@ -1,4 +1,4 @@
-const { Filters } = require('context/utilities/criteria');
+const { Filters } = require('shared/utilities/criteria');
 import { Diary } from './diary.model';
 import { Education } from './education.model';
 import { Experience } from './experience.model';

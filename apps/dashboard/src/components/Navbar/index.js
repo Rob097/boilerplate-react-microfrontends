@@ -8,13 +8,13 @@ import Menu from "@mui/material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Breadcrumbs from "components/Breadcrumbs";
 import NotificationItem from "components/NotificationItem";
-import { useAuthStore } from "context/stores/AuthStore";
+import { useAuthStore } from "shared/stores/AuthStore";
 import {
   setMiniSidenav,
   setOpenConfigurator,
   setTransparentNavbar,
   useSoftUIController,
-} from "context/stores/DashboardStore";
+} from "shared/stores/DashboardStore";
 import * as React from 'react';
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
@@ -107,7 +107,7 @@ function Navbar({ absolute, light, isMini }) {
       <NotificationItem
         color="secondary"
         image={
-          <Icon fontSize="small" sx={{ color: ({ palette: { white } }) => white.main }}>
+          <Icon fontSize="small" sx={{ color: ({ palette: { white } }) => white }}>
             payment
           </Icon>
         }
@@ -159,7 +159,7 @@ function Navbar({ absolute, light, isMini }) {
                   <IconButton sx={navbarIconButton} size="small" onClick={openSignOutConfirm}>
                     <LogoutIcon
                       sx={({ palette: { dark, white } }) => ({
-                        color: light ? white.main : dark.main,
+                        color: light ? white : dark.main,
                       })}
                     />
                     <Typography

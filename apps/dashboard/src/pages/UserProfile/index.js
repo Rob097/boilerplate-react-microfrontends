@@ -1,4 +1,4 @@
-import { Criteria, Operation, View } from "context/utilities/criteria";
+import { Criteria, Operation, View } from "shared/utilities/criteria";
 import React, { useRef } from 'react';
 import TinyEditorComponent from "../../components/TinyEditorComponent";
 import { UserQ } from "../../models/user.model";
