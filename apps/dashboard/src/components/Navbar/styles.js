@@ -6,8 +6,6 @@ function navbar(theme, ownerState) {
   const { navbarBoxShadow } = boxShadows;
   const { rgba, pxToRem } = functions;
 
-  console.log("palette", palette);
-
   return {
     boxShadow: transparentNavbar || absolute ? "none" : navbarBoxShadow,
     backdropFilter: transparentNavbar || absolute ? "none" : `saturate(200%) blur(${pxToRem(30)})`,

@@ -18,7 +18,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import SettingsIcon from '@mui/icons-material/Settings';
 
 // Soft UI Dashboard React base styles
-import theme from "shared/theme";
+import { useTheme } from '@mui/material/styles';
 
 import { useAuthStore } from "shared/stores/AuthStore";
 
@@ -26,6 +26,7 @@ function Header() {
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");
   const [tabValue, setTabValue] = useState(0);
   const [store] = useAuthStore();
+  const theme = useTheme();
   const { breakpoints } = theme;
 
   useEffect(() => {
