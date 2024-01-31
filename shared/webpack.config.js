@@ -98,7 +98,6 @@ module.exports = (env, argv) => {
           "./i18n": "./src/i18n/i18n",
           "./pages/ErrorPages": "./src/pages/ErrorPages",
           "./theme": "./src/theme/index",
-          "./tailwind": "./tailwind.config",
           "./utilities/constants": "./src/utilities/constants",
           "./utilities/criteria": "./src/utilities/criteria.model.ts",
           "./utilities/functions/boxShadow": "./src/utilities/functions/boxShadow",
