@@ -1,11 +1,13 @@
 export class User {
-    email = '';
+    email: string = '';
     roles = [];
     permissions = [];
-    firstName = '';
-    lastName = '';
+    firstName: string = '';
+    lastName: string = '';
+    password: string = '';
+    matchingPassword: string = '';
 
-    constructor(obj){
+    constructor(obj: any){
         this.email = obj.sub;
         this.firstName = obj.firstName;
         this.lastName = obj.lastName;

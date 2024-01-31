@@ -1,10 +1,11 @@
-import { METHODS as methods, BASE_URL } from "@rob097/common-lib/constants";
-const AUTH_URL = BASE_URL/* 'https://myportfolio-backend.it/api' */ + '/auth';
+const constants = require('shared/utilities/constants');
+import { User } from "../models/user.model";
+const AUTH_URL = constants.BASE_URL/* 'https://myportfolio-backend.it/api' */ + '/auth';
 const JSON_HEADER = { "Content-Type": "application/json" }
 
-export function signIn(data) {
+export function signIn(data: any) {
     return fetch(AUTH_URL + "/signin", {
-        method: methods.POST,
+        method: constants.METHODS.POST,
         headers: {
             ...JSON_HEADER
         },
@@ -16,9 +17,9 @@ export function signIn(data) {
     })
 }
 
-export function signUp(data) {
+export function signUp(data: User) {
     return fetch(AUTH_URL + "/signup", {
-        method: methods.POST,
+        method: constants.METHODS.POST,
         headers: {
             ...JSON_HEADER
         },
