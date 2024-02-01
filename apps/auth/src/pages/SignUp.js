@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthStore } from "shared/stores/AuthStore";
 import CoverLayout from "../components/CoverLayout";
+import curved6 from "public/images/curved-6.jpg";
 // import { signIn } from "../services/auth.service";
 
 function SignUp() {
@@ -55,7 +56,7 @@ function SignUp() {
         <CoverLayout
             title={t('sign-up.title')}
             description={t('sign-up.instruction')}
-            image={"/images/curved-6.jpg"}
+            image={curved6}
         >
 
             {

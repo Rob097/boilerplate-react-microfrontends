@@ -1,7 +1,6 @@
-import { ROLES as roles } from "@rob097/common-lib/constants";
-import { ErrorPage, NotAllowed, PageNotFound } from "@rob097/common-lib/pages/ErrorPages";
-import { useAuthStore } from "context/AuthStore";
-import Dashboard from "dashboard/Dashboard";
+import { ROLES as roles } from "shared/utilities/constants";
+import { ErrorPage, PageNotFound, NotAllowed } from "shared/pages/ErrorPages";
+import { useAuthStore } from "shared/stores/AuthStore";
 import { lazy } from "react";
 import { Navigate, Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Example from "./components/example";
@@ -9,6 +8,7 @@ import Home from "dashboard/Home";
 import UserProfile from "dashboard/UserProfile";
 const SignIn = lazy(() => import("auth/SignIn"));
 const SignUp = lazy(() => import("auth/SignUp"));
+const Dashboard = lazy(() => import("dashboard/Dashboard"));
 
 const DashboardRoutes = (isLoggedIn) => [
     {

@@ -1,4 +1,4 @@
-import "@/index.scss";
+import "./index.scss";
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import React from 'react';

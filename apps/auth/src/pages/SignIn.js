@@ -11,6 +11,7 @@ import { useAuthStore } from "shared/stores/AuthStore";
 import CoverLayout from "../components/CoverLayout";
 import { User } from "../models/user.model";
 import { signIn } from "../services/auth.service";
+import curved6 from "public/images/curved-6.jpg";
 
 function SignIn() {
   const { t, i18n } = useTranslation("auth");
@@ -60,7 +61,7 @@ function SignIn() {
     <CoverLayout
       title={t('sign-in.welcome-back')}
       description={t('sign-in.instruction')}
-      image={"/images/curved-6.jpg"}
+      image={curved6}
     >
 
       {

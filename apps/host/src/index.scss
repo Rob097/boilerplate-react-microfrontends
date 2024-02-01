@@ -1,4 +1,8 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "@rob097/common-lib/assets/theme/styles.scss";
+
+a {
+    text-decoration: none;
+    color: theme('colors.secondary.main');
+}

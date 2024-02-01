@@ -3,6 +3,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import { getLang, setLang } from 'shared/i18n';
 import { useTranslation } from 'react-i18next';
+import itFlag from 'public/images/flags/IT.svg';
+import usFlag from 'public/images/flags/US.svg';
 
 const LanguageSelector = ({ isMobile }) => {
     const { t, i18n } = useTranslation("auth");
@@ -21,8 +23,8 @@ const LanguageSelector = ({ isMobile }) => {
                 onChange={languageChengeHandler}
                 autoWidth
             >
-                <MenuItem value={"it"} style={{ marginBottom: '0.5rem' }}><span style={{ display: 'flex' }}><img src={"/images/flags/IT.svg"} style={{ maxWidth: '25px', marginRight: '0.5rem', float: 'left' }} />Italiano</span></MenuItem>
-                <MenuItem value={"en"} style={{ marginTop: '0.5rem' }}><span style={{ display: 'flex' }}><img src={"/images/flags/US.svg"} style={{ maxWidth: '25px', marginRight: '0.5rem', float: 'left' }} />English</span></MenuItem>
+                <MenuItem value={"it"} style={{ marginBottom: '0.5rem' }}><span style={{ display: 'flex' }}><img src={itFlag} style={{ maxWidth: '25px', marginRight: '0.5rem', float: 'left' }} />Italiano</span></MenuItem>
+                <MenuItem value={"en"} style={{ marginTop: '0.5rem' }}><span style={{ display: 'flex' }}><img src={usFlag} style={{ maxWidth: '25px', marginRight: '0.5rem', float: 'left' }} />English</span></MenuItem>
             </Select>
         </FormControl>
     );
