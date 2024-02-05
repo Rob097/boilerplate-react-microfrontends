@@ -16,6 +16,7 @@ const App = () => {
 
   console.debug("i18n for dashboard initialized: %O", i18n);
   console.debug("theme for dashboard initialized: %O", theme);
+  console.debug("tailwindConfig for dashboard initialized: %O", tailwindConfig);
 
   return (
     // Theme providers

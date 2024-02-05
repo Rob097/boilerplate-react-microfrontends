@@ -121,7 +121,7 @@ module.exports = (env, argv) => {
             eager: true,
             singleton: true,
             requiredVersion: parentDeps["react-dom"],
-          }
+          },
         }
       }),
       new HtmlWebPackPlugin({
