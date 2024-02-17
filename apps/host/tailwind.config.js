@@ -4,7 +4,9 @@ const colors = require('tailwindcss/colors')
 
 export default {
   content: [
-    "../../apps/**/*.{js,jsx,ts,tsx}",
+    "../../apps/auth/src/**/*.{js,jsx,ts,tsx}",
+    "../../apps/dashboard/src/**/*.{js,jsx,ts,tsx}",
+    "../../apps/host/src/**/*.{js,jsx,ts,tsx}",
     "../../shared/**/*.{js,jsx,ts,tsx}",
   ],
   presets: [],
@@ -196,7 +198,7 @@ export default {
         main: '#67748e'
       },
       background: {
-        main: '#fdf8f7',
+        main: '#f8f9fa',
         secondary: '#f5f7fa'
       }
     },
