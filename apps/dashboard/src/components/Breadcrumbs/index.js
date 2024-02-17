@@ -14,6 +14,9 @@ function Breadcrumbs({ icon, title, route, light, showTitle }) {
           "& .MuiBreadcrumbs-separator": {
             color: ({ palette: { white, grey } }) => (light ? white : grey[600]),
           },
+          "& .MuiBreadcrumbs-ol": {
+            flexWrap: "nowrap",
+          }
         }}
       >
         <Link to="/">
@@ -39,7 +42,7 @@ function Breadcrumbs({ icon, title, route, light, showTitle }) {
               opacity={light ? 0.8 : 0.5}
               sx={{ lineHeight: 0 }}
             >
-              {el === '' ? 'Home' : el.replace("-", " ")}
+              {el === '' ? 'Dashboard' : el.replace("-", " ")}
             </Typography>
           </Link>
         ))}
@@ -50,7 +53,7 @@ function Breadcrumbs({ icon, title, route, light, showTitle }) {
           color={light ? "white" : "dark"}
           sx={{ lineHeight: 0 }}
         >
-          {title === '' ? 'Home' : title.replace("-", " ")}
+          {title === '' ? 'Dashboard' : title.replace("-", " ")}
         </Typography>
       </MuiBreadcrumbs>
       <Typography
@@ -61,7 +64,7 @@ function Breadcrumbs({ icon, title, route, light, showTitle }) {
         noWrap
         display={showTitle ? "block" : "none"}
       >
-        {title === '' ? 'Home' : title.replace("-", " ")}
+        {title === '' ? 'Dashboard' : title.replace("-", " ")}
       </Typography>
     </Box>
   );
