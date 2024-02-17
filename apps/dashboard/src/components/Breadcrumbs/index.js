@@ -4,7 +4,7 @@ import Icon from "@mui/material/Icon";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function Breadcrumbs({ icon, title, route, light }) {
+function Breadcrumbs({ icon, title, route, light, showTitle }) {
   const routes = route.slice(0, -1);
 
   return (
@@ -22,6 +22,7 @@ function Breadcrumbs({ icon, title, route, light }) {
             variant="body2"
             color={light ? "white" : "dark"}
             opacity={light ? 0.8 : 0.5}
+            display="block"
             sx={{ lineHeight: 0 }}
           >
             <Icon>{icon}</Icon>
@@ -38,7 +39,7 @@ function Breadcrumbs({ icon, title, route, light }) {
               opacity={light ? 0.8 : 0.5}
               sx={{ lineHeight: 0 }}
             >
-              {el}
+              {el === '' ? 'Home' : el.replace("-", " ")}
             </Typography>
           </Link>
         ))}
@@ -49,7 +50,7 @@ function Breadcrumbs({ icon, title, route, light }) {
           color={light ? "white" : "dark"}
           sx={{ lineHeight: 0 }}
         >
-          {title.replace("-", " ")}
+          {title === '' ? 'Home' : title.replace("-", " ")}
         </Typography>
       </MuiBreadcrumbs>
       <Typography
@@ -58,8 +59,9 @@ function Breadcrumbs({ icon, title, route, light }) {
         variant="h6"
         color={light ? "white" : "dark"}
         noWrap
+        display={showTitle ? "block" : "none"}
       >
-        {title.replace("-", " ")}
+        {title === '' ? 'Home' : title.replace("-", " ")}
       </Typography>
     </Box>
   );

@@ -1,12 +1,17 @@
 import MenuIcon from '@mui/icons-material/Menu';
 import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Breadcrumbs from "components/Breadcrumbs";
 import * as React from 'react';
+import { useLocation } from "react-router-dom";
 import classes from './navbar.module.scss';
 
 function Navbar(props) {
+  const route = useLocation().pathname.split("/").slice(1);
+
   return (
     <AppBar
       position="fixed"
@@ -35,6 +40,9 @@ function Navbar(props) {
         >
           <MenuIcon />
         </IconButton>
+        <Box color="inherit" mb={{ xs: 1, md: 0 }}>
+          <Breadcrumbs icon="home" title={route[route.length - 1]} route={route} />
+        </Box>
         <Typography variant="h6" noWrap component="div">
           Responsive drawer
         </Typography>

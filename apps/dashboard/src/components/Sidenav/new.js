@@ -13,10 +13,11 @@ import ListItemText from "@mui/material/ListItemText";
 import Toolbar from '@mui/material/Toolbar';
 import * as React from 'react';
 import LanguageSelector from './LanguageSelector';
+import { Link, useLocation } from "react-router-dom";
 
 const primaryLinks = [
     { text: 'Home', icon: <InboxIcon />, to: '/' },
-    { text: 'About', icon: <MailIcon />, to: '/about' },
+    { text: 'Profile', icon: <MailIcon />, to: '/profile' },
     { text: 'Projects', icon: <InboxIcon />, to: '/projects' },
     { text: 'Contact', icon: <MailIcon />, to: '/contact' },
 ];
@@ -28,14 +29,16 @@ const secondaryLinks = [
 ];
 
 function Sidebar(props) {
+    // Get the current location from the last route
+    const route = useLocation().pathname.split("/").slice(1);
 
     const isBiggerThanMd = useMediaQuery((theme) => theme.breakpoints.up('md'));
-    const selectedItem = 0;
+    let selectedItem = [...primaryLinks, ...secondaryLinks].findIndex((el) => el.to === `/${route[0]}`);
 
     const CustomListItem = ({ element, index }) => {
         return (
             <ListItem key={element.text} disablePadding className='rounded-lg overflow-hidden my-2' >
-                <ListItemButton className='rounded-xl' selected={selectedItem === index} >
+                <ListItemButton className='rounded-xl' selected={selectedItem === index} to={element.to} component={Link}>
                     <ListItemIcon color={selectedItem === index ? 'primary' : 'inherit'} >
                         {element.icon && React.cloneElement(element.icon, { color: selectedItem === index ? 'primary' : 'inherit' })}
                     </ListItemIcon>
@@ -60,14 +63,14 @@ function Sidebar(props) {
             <Box className="px-4 pb-4" sx={{ minHeight: `calc(100% - 130px)` }}>
                 <List >
                     {primaryLinks.map((element, index) => (
-                        <CustomListItem element={element} index={index} />
+                        <CustomListItem key={`primary_links_${index}`} element={element} index={index} />
                     ))}
                 </List>
                 <Divider />
                 <List>
                     <Typography variant='h6' className='!text-md !font-bold !text-gray-400 !mt-4 !mb-2 pl-4'>My Diary</Typography>
                     {secondaryLinks.map((element, index) => (
-                        <CustomListItem element={element} index={primaryLinks.length + index} />
+                        <CustomListItem key={`secondary_links_${index}`} element={element} index={primaryLinks.length + index} />
                     ))}
                 </List>
                 <Button variant='contained' color='primary' className='!w-full !mt-4'>+ Add New</Button>
